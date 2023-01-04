@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+@media (max-width: 600) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .wrapper>* {
+    padding: 2em 2em;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+
+}
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.wrapper>* {
+  padding: 2em 2em;
+  border-radius: 10px;
+  margin-right: 10px;
+  color: rgb(67, 64, 64);
+}
+
+
+.contacts {
+  background: rgb(50, 48, 48);
+  color: #fff;
+}
+
+
+.form {
+  background: rgb(255, 255, 255);
+}
+
+.form>h3 {
+  margin-bottom: 50px;
+}
+
+.form a {
+  text-align: center;
+  font-size: 0.85rem;
+  color: rgb(140, 137, 137);
+}
+
+
+form {
+  text-align: left;
+
+}
+
+form div {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+
+
+form input,
+textarea {
+  background-color: transparent;
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-bottom-color: black;
+  padding: 10px;
+  margin-bottom: 5px;
+  outline: none;
+
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #ccc;
+}
+
+button,
+input,
+textarea {
+  padding: 1em;
+}
+
+button {
+  background: lightgrey;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+}
+
+button:hover,
+button:focus {
+  background: gold;
+  outline: 0;
+  cursor: pointer;
+}
+
+
+
+.about {
+  display: grid;
+  grid-template-columns: 500px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: rgb(140, 137, 137);
+}

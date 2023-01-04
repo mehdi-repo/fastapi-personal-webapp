@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block title %}Contact Page{% endblock %}
+{% block head %}
+{{ super() }}
+<style type="text/css">
+</style>
+{% endblock %}
+{% block content %}
+
+
+<div class="wrapper">
+  <div class="contacts">
+    <h2>Contact Info</h2>
+    <hr>
+    <br>
+    <ul>
+      <li>Contact us </li>
+      <li>00-****-11</li>
+      <li>mail@mail.com</li>
+    </ul>
+  </div>
+
+  <div class="form">
+    <h3>Contact Form</h3>
+    <form method="post">
+      <div>
+        <label for="">Email</label>
+        <input  name="email" placeholder="email" type="email" value="{{ email }}" />
+        
+      </div>
+      
+      <div>
+        <label for="">title</label>
+        <input  name="title" placeholder="title" type="text" value="{{ title }}" />
+      </div>
+      
+      <div>
+        <label for="">description</label>
+        <input  name="description" placeholder="description" type="text" value="{{ description }}" />
+      </div>
+
+      <div>
+        <button type="submit">Send Message</button>
+      </div>
+
+
+
+    </form>
+  </div>
+</div>
+
+{% endblock %}

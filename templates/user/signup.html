@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %}Contact Page{% endblock %}
+{% block head %}
+{{ super() }}
+<style type="text/css">
+</style>
+{% endblock %}
+{% block content %}
+
+
+<div class="wrapper">
+  <div class="contacts">
+    <h3>create new account</h3>
+    <ul>
+      <li>
+        Register Form
+
+      </li>
+    </ul>
+  </div>
+
+  <div class="form">
+    <h3>Register Form</h3>
+    <form method="post">
+      <div>
+        <label for="">username</label>
+        <input name="username" placeholder="username" type="text" value="{{ username }}" />
+
+      </div>
+
+      <div>
+        <label for="">email</label>
+        <input name="email" placeholder="email" type="text" value="{{ email }}" />
+      </div>
+
+      <div>
+        <label for="">password</label>
+        <input name="password" placeholder="password" type="text" value="{{ password }}" />
+        <!-- <input type="checkbox" id="vehicle2" name="is_active" value="{{ is_active }}">
+        <input required="" name="role" placeholder="password" type="text" value="{{ role }}" /> -->
+      </div>
+
+      <div>
+        <button type="submit">submit User</button>
+      </div>
+
+      {% for item in resault %}
+      {{ item }}
+      {% endfor %}
+
+
+
+
+
+      <div>
+        <a class="signin__link" href="/user/signin">I am already a member</a>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+{% endblock %}

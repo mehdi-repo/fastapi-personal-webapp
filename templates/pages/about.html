@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Contact Page{% endblock %}
+{% block head %}
+{{ super() }}
+<style type="text/css">
+</style>
+{% endblock %}
+{% block content %}
+
+
+<div class="wrapper">
+    <div class="contacts">
+        <h2>About us</h2>
+
+        <ul>
+            <li>Fast API</li>
+            <li>mail@mail.com</li>
+        </ul>
+    </div>
+
+    <div class="form">
+        <h3> Fast API ORMs</h3>
+        <div class="about">
+                FastAPI works with any database and any style of
+                library to talk to the database.
+                A common pattern is to use an "ORM": an "object-relational mapping"
+                library.
+
+                An ORM has tools to convert ("map") between objects in code and database tables ("relations").
+
+                With an ORM, you normally create a class that represents a table in a SQL database, each attribute of
+                the
+                class represents a column, with a name and a type.
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

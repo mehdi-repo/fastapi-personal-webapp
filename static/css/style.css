@@ -1,0 +1,187 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 60px;
+	line-height: 1.2;
+	margin-bottom: 15px;
+}
+
+.showcase {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+
+}
+
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.video-container video {
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+.video-container:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	
+}
+
+.content {
+	z-index: 2;
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+
+}
+
+.sidbar-container {
+	height: 100vh;
+	min-width: fit-content;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	padding: 10px;
+	background: rgb(50, 48, 48);
+	color: rgb(248, 246, 246);
+	opacity: 0.7;
+
+
+}
+
+.icon {
+	margin-bottom: 20px;
+	padding: 15px;
+	display: flex;
+
+}
+
+.icon span {
+
+	font-size: 20px;
+	font-family: 'Courier New', Courier, monospace;
+	margin-left: 5px;
+	align-items: center;
+	align-self: center;
+}
+
+
+.fa-user-plus {
+	color: red;
+	font-size: large;
+}
+
+.sidbar-kink  {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+}
+
+.sidbar-kink span {
+	font-size: 20px;
+	font-family: 'Courier New', Courier, monospace;
+	margin-left: 5px;
+	color: #111;
+}
+
+.sidbar-kink i {
+	margin-bottom: 20px;
+}
+
+.sidbar-kink a {
+	color: rgb(255, 248, 248);
+	cursor: pointer;
+}
+
+
+/* main-conainer */
+
+.main-conainer {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+
+}
+
+
+
+
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	color: #fff;
+	border-radius: 5px;
+	border: solid #fff 1px;
+	margin-top: 25px;
+	opacity: 0.7;
+}
+
+.btn:hover {
+	transform: scale(0.98);
+	cursor: pointer;
+}
+
+#about {
+	padding: 40px;
+	text-align: center;
+}
+
+#about p {
+	font-size: 1.2rem;
+	max-width: 600px;
+	margin: auto;
+}
+
+#about h2 {
+	margin: 30px 0;
+}
+
+.social a {
+	margin: 0 5px;
+
+}
+
+.event{
+	display: flex;
+	flex-direction: column;
+}

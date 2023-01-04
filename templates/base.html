@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% block head %}
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link rel="stylesheet"
+                  type="text/css"
+                  href="{{ url_for('static', path='/css/style.css')}}"/>
+            <link rel="stylesheet"
+                  type="text/css"
+                  href="{{ url_for('static', path='/css/contact.css')}}"/>
+            <link rel="stylesheet"
+                  type="text/css"
+                  href="{{ url_for('static', path='/css/pages.css')}}"/>
+            <link rel="stylesheet"
+                  type="text/css"
+                  href="{{ url_for('static', path='/fontawesome/css/all.css')}}"/>
+            <title>
+                {% block title %}{% endblock %}
+            My Webpage</title>
+        {% endblock %}
+    </head>
+    <body>
+        <section class="showcase">
+            <div class="video-container">
+                <video src="{{ url_for('static', path='/video/video.mp4')}}"
+                       autoplay
+                       muted
+                       loop>
+                </video>
+            </div>
+            <div class="content">
+                <div class="sidbar-container">
+                    <div class="icon">
+                        <i class="fa-brands fa-python fa-3x"></i>
+                        <span>Fast API APP</span></span>
+                    </div>
+                    <div class="sidbar-kink">
+                        <i class="fa-solid fa-house-user fa-1x">
+                            <span><a href="/">Home</a></span>
+                        </i>
+                        <i class="fa-solid fa-circle-info fa-1x">
+                            <span><a href="/about">About</a></span>
+                        </i>
+                        <i class="fa-solid fa-building-lock">
+                            <span><a href="/event">Event</a></span>
+                        </i>
+                        <i class="fa-solid fa-comments fa-1x">
+                            <span><a href="/contact">Contact</a></span>
+                        </i>
+                    </div>
+                    <div class="sidbar-kink">
+                        <i class="fa-solid fa-user-plus">
+                            <span><a id="login"  href="/user/signup">Login</a></span>
+                        </i>
+                    </div>
+                </div>
+                <div class="main-conainer" id="content">
+                    {% block content %}{% endblock %}
+                </div>
+            </div>
+        </section>
+        <div id="footer">
+            {% block footer %}&copy; Copyright 2008 by <a href="http://domain.invalid/">you</a>.{% endblock %}
+        </div>
+    </body>
+</html>

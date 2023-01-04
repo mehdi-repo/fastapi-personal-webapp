@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Contact Page{% endblock %}
+{% block head %}
+{{ super() }}
+<style type="text/css">
+</style>
+{% endblock %}
+{% block content %}
+
+
+
+
+<div class="event">
+  <h1>secure page </h1>
+  
+  <p>Welcome to the home page.</p>
+  
+  {% if user %}
+  <h2>You are logged in 🏡</h2>
+  <p>
+    Hi {{ user.email }}! You are logged in, so you can access the private 
+    page.!
+  </p>
+  {% else %}
+  <h2>You are NOT logged in :(</h2>
+  {% endif %}
+  
+</div>
+
+
+
+{% endblock %}
